@@ -159,6 +159,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 7px;
+    
     background-color: rgb(236, 147, 84);
 }
 
@@ -167,7 +168,7 @@ button {
     text-align: right;
     width: 50%;
     margin-left: auto;
-    z-index: 10;
+    z-index: 2;
 }
 
 .text h1 {
@@ -545,7 +546,7 @@ button {
         top: 0;
         left: -300px;
         transition: all 1s;
-        z-index: 10;
+        z-index: 100 ;
         border-radius: 0px 0px 15px 0px;
     }
 
@@ -569,7 +570,11 @@ button {
     }
 
     .col-20 {
-        width: 30%;
+        width: 100%;
+    }
+
+    .content{
+        margin: 10px 0;
     }
 
     .active ul {
@@ -650,7 +655,7 @@ button {
 
     /* sec-8 */
     .product-lift button {
-        margin: 0 10px 0px 0px;
+        margin: 10px 10px 0px 0px;
     }
 
     .footer-content {
