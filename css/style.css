@@ -91,25 +91,22 @@ nav ul li:hover a {
     background-attachment: fixed;
     height: 600px;
     display: grid;
-    animation: bgimg 10s ease-in-out infinite;
-    /* margin-top: 90px; */
+    /* animation: bgimg 10s ease-in-out infinite; */
+    animation: slide 10s infinite linear alternate;
+
 }
 
-@keyframes bgimg {
+@keyframes slide {
     0% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.648)), url(../img/home-img.jpg);
+        background-image: url(../img/home-img.jpg);
     }
 
-    50% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.306), rgba(0, 0, 0, 0.388)), url(../img/bg1.jpg);
-    }
-
-    70% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.42)), url(../img/bg2.webp);
+    35% {
+        background-image: url(../img/bg1.jpg);
     }
 
     100% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.384)), url(../img/bg4.avif);
+        background-image: url(../img/bg4.avif);
     }
 }
 
@@ -524,6 +521,10 @@ button {
         display: block;
     }
 
+    nav h2 {
+        display: none;
+    }
+
     nav ul {
         width: 50%;
         height: 100vh;
@@ -540,14 +541,13 @@ button {
 
     nav ul li {
         padding: 10px;
-        background-color: aqua;
         margin: 13px;
         border-radius: 10px;
     }
 
     nav ul li a {
-        color: rgb(18, 12, 12);
-        font-weight: 600;
+        color: #fff;
+        font-weight: 700;
     }
 
     .col_50 {
@@ -674,7 +674,13 @@ button {
     }
 
     nav h2 {
-        font-size: 25px;
+        /* font-size: 25px; */
+        display: none;
+    }
+
+    .img img {
+        width: 600px;
+        height: 90px;
     }
 
     .home {
@@ -702,6 +708,17 @@ button {
         text-align: center;
     }
 
+    #menu img {
+        width: 70px;
+    }
+
+    nav h2 {
+        /* font-size: 25px; */
+        display: none;
+    }
+
+    
+
     /* sec-3 */
     .sec-img img {
         height: 235px;
@@ -722,6 +739,10 @@ button {
     /* sec-5 */
     .seamlessly {
         width: 71%;
+    }
+
+    .footer-text {
+        padding: 0 20px;
     }
 }
 
@@ -746,13 +767,19 @@ button {
         height: auto;
         padding: 40px 0;
     }
+
+    .footer-text {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 1400px) {
-
     .text {
         text-align: center;
         width: 100%;
-        /* margin: auto; */
+    }
+
+    .footer-text {
+        padding: 0 20px;
     }
 }

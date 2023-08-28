@@ -18,10 +18,8 @@
     <div class="container">
       <div id="header">
         <nav id="menu">
-          <div class="row align-item">
-
+          <div class="row align-item img">
             <img src="img/logo-removebg-preview.png" alt="">
-
             <h2>Agile Fulfillment</h2>
           </div>
           <ul id="menu-list">
@@ -320,18 +318,13 @@
       console.log("succes");
     }
 
-
     window.onscroll = function () {
       Toggle.classList.remove("active");
       if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        // document.getElementById("myP").className = "test";
         header.classList.add("header");
       } else {
-        // document.getElementById("myP").className = "";
         header.classList.remove("header");
       }
-
-
     }
   </script>
 
